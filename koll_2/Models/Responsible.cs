@@ -1,14 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace koll_2.Models;
 [Table("Responsible")]
+[PrimaryKey(nameof(BatchId), nameof(EmployeeId))]
 public class Responsible
 {
-        
-    [Key]
     public int BatchId { get; set; }
-
     public int EmployeeId { get; set; }
         
     [MaxLength(50)]
