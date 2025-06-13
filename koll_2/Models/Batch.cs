@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.CompilerServices;
 
 namespace koll_2.Models;
 [Table("Seedling_Batch")]
@@ -15,7 +16,6 @@ public class Batch
     public int Quantity { get; set; }
 
     public DateTime SownDate { get; set; }
-
     public DateTime? ReadyDate { get; set; }
 
 
