@@ -14,7 +14,7 @@ namespace ForestNursery.Data
         public DbSet<Species> Species { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Batch> Batches { get; set; }
-        public DbSet<Responsible> BatchEmployees { get; set; }
+        public DbSet<Responsible> Responsibles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
